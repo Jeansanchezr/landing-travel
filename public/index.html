@@ -9,31 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/css/estilos.css">
 </head>
-<body>
-    <nav></nav>
-    <div id="tab_bar"></div>
-    <section class="w-full h-screen">
-        <div id="home">
+<body class="font-Montserrat">
 
-            <div class="w-full h-3/4 border-2 border-blue-700">
+    <nav></nav>
+
+    
+    <section class="w-full h-full">
+
+        <div id="home">
+            <div class="w-full h-3/4">
                 
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center" >
-                    <input class="outline-none p-2 rounded-full shadow-md"  placeholder="San Francisco" search="" name="">
-                    <button class="w-32 text-2xl rounded-full shadow-md font-semibold text-primary bg-white p-4">
+                    <input class="outline-none p-2 rounded-full shadow-md transition duration-300 focus-within:shadows-sm focus:ring-2 focus:w-11/12"  placeholder="San Francisco" search="" name="">
+                    
+                    <button class="w-48 text-lg rounded-full shadow-md font-semibold text-primary bg-white p-4 transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
                         Explorar
                     </button>
                 </div>
                 <div class="w-full h-full">
                     <img src="./img/sanFrancisco.jpg" alt="sanFrancisco space-y-96 py-4 items-center">
-                </div>
-                
+                </div>             
             </div>
-
         </div>
-
-        <div class="p-6 " id="recomendados">
+        
+        <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary"> Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-auto flex space-x-4">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-auto flex space-x-6 overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
@@ -59,16 +60,73 @@
             </div>
         </div>
         
-        <div id="rentas_destacadas"></div>
+        <div class="p-6 h-full w-full" id="rentas_destacadas">
+            <p class="text-3xl text-primary font-semibold">Rentas Destacadas</p>
+            <div class="w-full h-full flex flex-col space-y-6 justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl ">
+                    <p class="CardTitle">Chicago</p>
+                    <p class="text-sm pl-8 text-black mr-24">2 habitaciones, un baño y cocina</p>
+                </div>
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl ">
+                    <p class="CardTitle">Chicago</p>
+                    <p class="text-sm pl-8 text-black mr-24">2 habitaciones, un baño y cocina</p>
+                </div>
+                
+            </div>
+            <div class="w-full h-full" id="faqs">
+                <div class="w-full h-full px-6 flex flex-col space-y-4">
+                    <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Politica de Cancelación</p>
+                        <p class="text-md pt-2">
+                            Para estancias menores a una semana se podra proceder con la devolucion.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Politica de Cancelación</p>
+                        <p class="text-md pt-2">
+                            Para estancias menores a una semana se podra proceder con la devolucion.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary">Politica de Cancelación</p>
+                        <p class="text-md pt-2">
+                            Para estancias menores a una semana se podra proceder con la devolucion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
-    <footer>
-
+    <footer class="w-full h-56 px-4 space-y-2 bg-gray-400">
+        <p class="text-lg">Acerca De</p>
+        <p class="text-sm text-gray-200">Inversionitas</p>
+        <p class="text-sm text-gray-200">Empleos</p>
+        <p class="text-sm text-gray-200">Terminos y condiciones</p>
+        <p class="text-sm text-gray-200">Travel, Inc.</p>
     </footer>
 
+    <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadows-md flex space-x-8 items-center justify-center" id="tab_bar">
+        <a href="#home">
+            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-gray-200" d="M10.707 2.29303C10.5195 2.10556 10.2652 2.00024 10 2.00024C9.73488 2.00024 9.48057 2.10556 9.29304 2.29303L2.29304 9.29303C2.11088 9.48163 2.01009 9.73423 2.01237 9.99643C2.01465 10.2586 2.11981 10.5094 2.30522 10.6948C2.49063 10.8803 2.74144 10.9854 3.00364 10.9877C3.26584 10.99 3.51844 10.8892 3.70704 10.707L4.00004 10.414V17C4.00004 17.2652 4.1054 17.5196 4.29293 17.7071C4.48047 17.8947 4.73482 18 5.00004 18H7.00004C7.26526 18 7.51961 17.8947 7.70715 17.7071C7.89468 17.5196 8.00004 17.2652 8.00004 17V15C8.00004 14.7348 8.1054 14.4805 8.29293 14.2929C8.48047 14.1054 8.73482 14 9.00004 14H11C11.2653 14 11.5196 14.1054 11.7071 14.2929C11.8947 14.4805 12 14.7348 12 15V17C12 17.2652 12.1054 17.5196 12.2929 17.7071C12.4805 17.8947 12.7348 18 13 18H15C15.2653 18 15.5196 17.8947 15.7071 17.7071C15.8947 17.5196 16 17.2652 16 17V10.414L16.293 10.707C16.4816 10.8892 16.7342 10.99 16.9964 10.9877C17.2586 10.9854 17.5095 10.8803 17.6949 10.6948C17.8803 10.5094 17.9854 10.2586 17.9877 9.99643C17.99 9.73423 17.8892 9.48163 17.707 9.29303L10.707 2.29303Z" fill="#3F3F46"/>
+            </svg>
+        </a>
+        <a href="#rentas_destacadas">
+            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M8 3.99997C6.93913 3.99997 5.92172 4.4214 5.17157 5.17155C4.42143 5.92169 4 6.93911 4 7.99997C4 9.06084 4.42143 10.0783 5.17157 10.8284C5.92172 11.5785 6.93913 12 8 12C9.06087 12 10.0783 11.5785 10.8284 10.8284C11.5786 10.0783 12 9.06084 12 7.99997C12 6.93911 11.5786 5.92169 10.8284 5.17155C10.0783 4.4214 9.06087 3.99997 8 3.99997ZM2 7.99997C1.99988 7.05568 2.22264 6.12468 2.65017 5.28271C3.0777 4.44074 3.69792 3.71157 4.4604 3.1545C5.22287 2.59743 6.10606 2.22819 7.03815 2.07681C7.97023 1.92543 8.92488 1.99618 9.82446 2.28332C10.724 2.57046 11.5432 3.06587 12.2152 3.72927C12.8872 4.39266 13.3931 5.20531 13.6919 6.10111C13.9906 6.9969 14.0737 7.95056 13.9343 8.88452C13.795 9.81848 13.4372 10.7064 12.89 11.476L17.707 16.293C17.8892 16.4816 17.99 16.7342 17.9877 16.9964C17.9854 17.2586 17.8802 17.5094 17.6948 17.6948C17.5094 17.8802 17.2586 17.9854 16.9964 17.9876C16.7342 17.9899 16.4816 17.8891 16.293 17.707L11.477 12.891C10.5794 13.5293 9.52335 13.9081 8.42468 13.9861C7.326 14.0641 6.22707 13.8381 5.2483 13.3329C4.26953 12.8278 3.44869 12.063 2.87572 11.1223C2.30276 10.1816 1.99979 9.10141 2 7.99997Z" fill="#3F3F46"/>
+            </svg>
+        </a>
+        <a href="">
 
+        </a>
+        <a href="">
 
+        </a>
+        <a href="">
 
-
-
+        </a>
+    </div>
 </body>
 </html>
