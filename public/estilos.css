@@ -628,6 +628,10 @@ video {
   width: 12rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -738,39 +742,39 @@ video {
 }
 
 .bg-LA {
-  background-image: url('/public/img/LA.jpg');
+  background-image: url('../public/img/LA.jpg');
 }
 
 .bg-bali {
-  background-image: url('/public/img/bali.jpg');
+  background-image: url('../public/img/bali.jpg');
 }
 
 .bg-chicago {
-  background-image: url('/public/img/chicago.jpg');
+  background-image: url('../public/img/chicago.jpg');
 }
 
 .bg-europe {
-  background-image: url('/public/img/europe.jpg');
+  background-image: url('../public/img/europe.jpg');
 }
 
 .bg-miami {
-  background-image: url('/public/img/miami.jpg');
+  background-image: url('../public/img/miami.jpg');
 }
 
 .bg-new_york {
-  background-image: url('/public/img/new_york.jpg');
+  background-image: url('../public/img/new_york.jpg');
 }
 
 .bg-norway {
-  background-image: url('/public/img/norway.jpg');
+  background-image: url('../public/img/norway.jpg');
 }
 
 .bg-seattle {
-  background-image: url('/public/img/seattle.jpg');
+  background-image: url('../public/img/seattle.jpg');
 }
 
 .bg-yosemite {
-  background-image: url('/public/img/yosemite.jpg');
+  background-image: url('../public/img/yosemite.jpg');
 }
 
 .bg-cover {
@@ -1071,7 +1075,7 @@ video {
   }
 
   .lg\:bg-sanFranciscoDesktop {
-    background-image: url('/public/img/sanFranciscoDesktop.jpg');
+    background-image: url('../public/img/sanFranciscoDesktop.jpg');
   }
 
   .lg\:bg-cover {
