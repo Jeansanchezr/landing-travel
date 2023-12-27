@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./public/index.html"],
+  content: ["./public/*.{html,js}"],
   darkMode: 'class',
   theme: {
-    extend: { 
+    extend: {
 	
 	/**npm run scanTailWind*/
 
